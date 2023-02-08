@@ -7,7 +7,6 @@ import 'package:get/get.dart';
 const String APP = "app";
 const String APP_NAME = "Chabhi";
 
-
 //colors
 const btnColor = Colors.blue;
 const borderColor = Color.fromARGB(31, 26, 25, 25);
@@ -36,6 +35,7 @@ const double TextFont30 = 30;
 const INTRO_SCREEN = '/intro_screen';
 const LOGIN_SCREEN = '/login';
 const HOME_SCREEN = '/home';
+const DETAIL_SCREEN = '/details';
 const CONTACT_SCREEN = '/contactus';
 const Service_Details_Screen = '/services';
 const Service_Request_Screen = '/service_request';
@@ -97,3 +97,6 @@ void showSnackbar(String title, String msg) {
 void dismissSnakbar() {
   ScaffoldMessenger.of(Get.context!).hideCurrentSnackBar();
 }
+
+String lormp =
+    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.";

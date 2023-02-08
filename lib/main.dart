@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:gpo/route.dart';
+import 'package:gpo/widget/route.dart';
 
 void main() {
   runApp(const MyApp());

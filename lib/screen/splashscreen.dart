@@ -3,7 +3,10 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-
+import 'package:get/get.dart';
+import 'package:gpo/widget/app_logo.dart';
+import 'package:gpo/widget/strings.dart';
+import 'package:gpo/widget/widget_util.dart';
 
 class Splashscreen extends StatefulWidget {
   const Splashscreen({Key? key}) : super(key: key);
@@ -13,7 +16,6 @@ class Splashscreen extends StatefulWidget {
 }
 
 class _SplashscreenState extends State<Splashscreen> {
-  
   late bool logoCheck = false;
 
   late bool loggedCheck = false;
@@ -39,34 +41,24 @@ class _SplashscreenState extends State<Splashscreen> {
   }
 
   startTime() async {
-
     print(logoCheck);
 
-    var duration = Duration(seconds: 5);
+    var duration = Duration(seconds: 3);
     return Timer(duration, route);
   }
 
   route() async {
-    // SharedPreferences _prefs = await SharedPreferences.getInstance();
-
-    // if (_prefs.containsKey("UserId")) {
-    //   Get.toNamed(HOME);
-    // } else {
-    //   Get.toNamed(LOGIN);
-    // }
-    // app.appController.getLocation();
-
-    // Get.toNamed(LOGIN);
+    Get.toNamed(HOME_SCREEN);
   }
 
-  // initScreen(BuildContext context) {
-  //   return SafeArea(
-  //     child: Center(
-  //       child: Column(
-  //         mainAxisAlignment: MainAxisAlignment.center,
-  //         children: [AppLogo(), SizedBox(height: 50), WidgetUtil.loader()],
-  //       ),
-  //     ),
-  //   );
-  // }
+  initScreen(BuildContext context) {
+    return SafeArea(
+      child: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [AppLogo(), SizedBox(height: 50), WidgetUtil.loader()],
+        ),
+      ),
+    );
+  }
 }
